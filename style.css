@@ -1,0 +1,38 @@
+:root {
+    --navBackground: #111;
+    --navText: #fff;
+
+    --mainBackground: #222;
+    --mainText: #eee;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: var(--mainBackground);
+    color: var(--mainText);
+}
+header {
+    background-color: var(--navBackground);
+    color: var(--navText);
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+.hero {
+    display: flex;
+    justify-content: space-around;
+}
+.customise {
+    background-color: var(--mainBackground);
+    color: var(--mainText);
+}
+input {
+    display: none;
+}
+footer {
+    height: 5rem;
+    margin-top: 40ch;
+    background-color: var(--navBackground);
+    color: var(--navText);
+}
