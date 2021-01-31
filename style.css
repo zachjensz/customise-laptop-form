@@ -4,6 +4,20 @@
 
     --mainBackground: #222;
     --mainText: #eee;
+
+    --formboxBackground: #ccc;
+    --formboxText: #444;
+    --formboxBackgroundChecked: #bef;
+    --formboxTextChecked: #367;
+    --formboxBackgroundHover: #bbf;
+    --formboxTextHover: #447;
+
+    --formboxBorder: #444;
+    --formboxBorderChecked: #44f;
+    --formboxBorderHover: #4cf;
+
+    --formboxWidth: 12ch;
+    --formboxBorderWidth: 2px;
 }
 
 body {
@@ -27,8 +41,34 @@ header {
     background-color: var(--mainBackground);
     color: var(--mainText);
 }
-input {
-    display: none;
+fieldset {
+    display: flex;
+}
+.formbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+.formbox label {
+    background-color: var(--formboxBackground);
+    color: var(--formboxText);
+    border: var(--formboxBorderWidth) solid var(--formboxBorder);
+
+    margin: 0.4rem;
+    padding: 0.4rem;
+    display: block;
+    width: var(--formboxWidth);
+    height: var(--formboxWidth);
+}
+.formbox label:hover {
+    background-color: var(--formboxBackgroundHover);
+    color: var(--formboxTextHover);
+    border: var(--formboxBorderWidth) solid var(--formboxBorderHover);
+}
+.formbox input:checked ~ label {
+    background-color: var(--formboxBackgroundChecked);
+    color: var(--formboxTextChecked);
+    border: var(--formboxBorderWidth) solid var(--formboxBorderChecked);
 }
 footer {
     height: 5rem;
