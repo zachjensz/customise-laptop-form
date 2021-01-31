@@ -9,8 +9,8 @@
     --formboxText: #444;
     --formboxBackgroundChecked: #bef;
     --formboxTextChecked: #367;
-    --formboxBackgroundHover: #bbf;
-    --formboxTextHover: #447;
+    --formboxBackgroundHover: #eee;
+    --formboxTextHover: #777;
 
     --formboxBorder: #444;
     --formboxBorderChecked: #44f;
@@ -60,7 +60,8 @@ fieldset {
     width: var(--formboxWidth);
     height: var(--formboxWidth);
 }
-.formbox label:hover {
+.formbox label:hover,
+.formbox input:focus ~ label {
     background-color: var(--formboxBackgroundHover);
     color: var(--formboxTextHover);
     border: var(--formboxBorderWidth) solid var(--formboxBorderHover);
