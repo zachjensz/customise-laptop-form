@@ -5,16 +5,16 @@
     --mainBackground: #222;
     --mainText: #eee;
 
-    --formboxBackground: #000;
-    --formboxText: #ccc;
-    --formboxBackgroundChecked: #bef;
-    --formboxTextChecked: #135;
-    --formboxBackgroundHover: #222;
+    --formboxBackground: #111;
+    --formboxText: #eee;
+    --formboxBackgroundChecked: #6ef;
+    --formboxTextChecked: #024;
+    --formboxBackgroundHover: #000;
     --formboxTextHover: #ddd;
 
     --formboxBorder: #444;
     --formboxBorderChecked: #44f;
-    --formboxBorderHover: #4cf;
+    --formboxBorderHover: #6ef;
 
     --formboxWidth: 16ch;
     --formboxBorderWidth: 2px;
@@ -60,6 +60,7 @@ fieldset {
 
     cursor: pointer;
     padding: 0.4rem;
+    margin: 0.25rem;
     display: block;
     width: var(--formboxWidth);
 }
